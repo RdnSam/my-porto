@@ -1,0 +1,97 @@
+.section {
+  padding: 100px 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.eduCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  transition: border-color 0.2s;
+}
+
+.eduCard:hover { border-color: rgba(0,229,255,0.3); }
+
+.badge {
+  width: 60px;
+  height: 60px;
+  background: rgba(0,229,255,0.08);
+  border: 1px solid rgba(0,229,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.degree {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.school { color: var(--cyan); font-size: 12px; margin-bottom: 3px; }
+.year { font-size: 11px; color: var(--text-dim); }
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.contactCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.contactCard:hover {
+  border-color: var(--cyan);
+  background: rgba(0,229,255,0.04);
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,229,255,0.08);
+  border: 1px solid rgba(0,229,255,0.2);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.contactCard:hover .icon {
+  background: rgba(0,229,255,0.15);
+  border-color: var(--cyan);
+}
+
+.label {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 3px;
+}
+
+.value { color: var(--white); font-size: 13px; }
+
+@media (max-width: 640px) {
+  .contactGrid { grid-template-columns: 1fr; }
+  .section { padding: 60px 1rem; }
+}
