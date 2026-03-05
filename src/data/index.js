@@ -6,7 +6,7 @@ export const profile = {
   phone: '0821-2471-7778',
   email: 'syammridwan@gmail.com',
   location: 'Kalisuren, Bogor',
-  github: 'https://github.com/ridwansyambudi',
+  github: 'https://github.com/rdnsam',
   stats: [
     { num: '4+', label: 'Years Exp' },
     { num: '5k+', label: 'Users Served' },
@@ -113,7 +113,7 @@ export const projects = [
     theme: 'web',
     stack: ['React', 'Vite', 'CSS'],
     desc: 'This portfolio — built with Vite + React. Dark terminal aesthetic with neon accents, smooth scroll animations, and fully responsive layout.',
-    link: 'https://github.com/ridwansyambudi',
+    link: 'https://github.com/rdnsam',
   },
   {
     id: 6,
